@@ -1,0 +1,219 @@
+```text id="f0g8x3"
+rammy/
+├── build.zig
+├── build.zig.zon
+│
+├── kernel/
+│   ├── main.zig
+│   ├── panic.zig
+│   ├── boot.zig
+│   │
+│   ├── arch/
+│   │   ├── x86_64/
+│   │   │   ├── boot.zig
+│   │   │   ├── gdt.zig
+│   │   │   ├── idt.zig
+│   │   │   ├── paging.zig
+│   │   │   ├── cpu.zig
+│   │   │   ├── apic.zig
+│   │   │   └── timer.zig
+│   │   │
+│   │   ├── riscv64/
+│   │   └── arm64/
+│   │
+│   ├── fabric/
+│   │   ├── fabric.zig
+│   │   ├── node.zig
+│   │   ├── discovery.zig
+│   │   ├── heartbeat.zig
+│   │   ├── topology.zig
+│   │   ├── routing.zig
+│   │   ├── latency.zig
+│   │   ├── bandwidth.zig
+│   │   ├── membership.zig
+│   │   └── fabric_id.zig
+│   │
+│   ├── gmem/
+│   │   ├── gmem.zig
+│   │   ├── page.zig
+│   │   ├── allocator.zig
+│   │   ├── ownership.zig
+│   │   ├── migration.zig
+│   │   ├── replication.zig
+│   │   ├── remote_fault.zig
+│   │   ├── pager.zig
+│   │   ├── heat.zig
+│   │   ├── lease.zig
+│   │   ├── residency.zig
+│   │   └── eviction.zig
+│   │
+│   ├── coherence/
+│   │   ├── coherence.zig
+│   │   ├── invalidation.zig
+│   │   ├── ownership.zig
+│   │   ├── synchronization.zig
+│   │   ├── lease_manager.zig
+│   │   ├── writeback.zig
+│   │   └── consistency.zig
+│   │
+│   ├── sched/
+│   │   ├── sched.zig
+│   │   ├── placement.zig
+│   │   ├── locality.zig
+│   │   ├── balancing.zig
+│   │   ├── migration.zig
+│   │   ├── topology_cost.zig
+│   │   ├── thermal.zig
+│   │   └── failover.zig
+│   │
+│   ├── proc/
+│   │   ├── proc.zig
+│   │   ├── pid.zig
+│   │   ├── task.zig
+│   │   ├── context.zig
+│   │   ├── migration.zig
+│   │   ├── checkpoint.zig
+│   │   ├── restore.zig
+│   │   ├── failover.zig
+│   │   └── residency.zig
+│   │
+│   ├── mm/
+│   │   ├── mm.zig
+│   │   ├── phys.zig
+│   │   ├── virt.zig
+│   │   ├── slab.zig
+│   │   ├── hugepage.zig
+│   │   ├── map.zig
+│   │   └── numa.zig
+│   │
+│   ├── ipc/
+│   │   ├── ipc.zig
+│   │   ├── channel.zig
+│   │   ├── message.zig
+│   │   ├── queue.zig
+│   │   ├── rpc.zig
+│   │   └── fabric_rpc.zig
+│   │
+│   ├── cap/
+│   │   ├── cap.zig
+│   │   ├── handle.zig
+│   │   ├── authority.zig
+│   │   ├── revoke.zig
+│   │   └── transfer.zig
+│   │
+│   ├── net/
+│   │   ├── net.zig
+│   │   ├── packet.zig
+│   │   ├── ethernet.zig
+│   │   ├── rdma.zig
+│   │   ├── cxl.zig
+│   │   ├── transport.zig
+│   │   └── fabric_transport.zig
+│   │
+│   ├── fault/
+│   │   ├── fault.zig
+│   │   ├── detector.zig
+│   │   ├── recovery.zig
+│   │   ├── evacuation.zig
+│   │   ├── quarantine.zig
+│   │   └── node_death.zig
+│   │
+│   ├── log/
+│   │   ├── log.zig
+│   │   ├── battle_report.zig
+│   │   ├── migration_trace.zig
+│   │   ├── scheduler_trace.zig
+│   │   ├── memory_trace.zig
+│   │   └── fault_trace.zig
+│   │
+│   ├── topology/
+│   │   ├── graph.zig
+│   │   ├── distance.zig
+│   │   ├── route_cost.zig
+│   │   └── placement_map.zig
+│   │
+│   ├── sync/
+│   │   ├── spinlock.zig
+│   │   ├── rwlock.zig
+│   │   ├── barrier.zig
+│   │   ├── atomic.zig
+│   │   └── lease.zig
+│   │
+│   ├── time/
+│   │   ├── clock.zig
+│   │   ├── timer.zig
+│   │   ├── tick.zig
+│   │   └── timestamp.zig
+│   │
+│   └── drivers/
+│       ├── ethernet/
+│       │   ├── intel/
+│       │   ├── realtek/
+│       │   └── broadcom/
+│       │
+│       ├── rdma/
+│       ├── cxl/
+│       ├── nvme/
+│       └── serial/
+│
+├── runtime/
+│   ├── runtime.zig
+│   ├── allocator.zig
+│   ├── migration.zig
+│   ├── checkpoint.zig
+│   ├── fabric_api.zig
+│   ├── object_space.zig
+│   └── distributed_heap.zig
+│
+├── ai/
+│   ├── tensor.zig
+│   ├── tensor_shard.zig
+│   ├── kv_cache.zig
+│   ├── distributed_inference.zig
+│   ├── distributed_training.zig
+│   ├── placement.zig
+│   ├── model_residency.zig
+│   └── stable_diffusion.zig
+│
+├── sim/
+│   ├── sim.zig
+│   ├── node.zig
+│   ├── latency.zig
+│   ├── bandwidth.zig
+│   ├── failure.zig
+│   ├── numa.zig
+│   └── topology.zig
+│
+├── tools/
+│   ├── fabricctl.zig
+│   ├── nodectl.zig
+│   ├── memview.zig
+│   ├── topoview.zig
+│   ├── faultctl.zig
+│   └── bench.zig
+│
+├── tests/
+│   ├── migration_test.zig
+│   ├── coherence_test.zig
+│   ├── failover_test.zig
+│   ├── scheduler_test.zig
+│   ├── replication_test.zig
+│   ├── topology_test.zig
+│   └── ai_test.zig
+│
+└── scripts/
+    ├── boot_cluster.sh
+    ├── spawn_nodes.sh
+    ├── kill_node.sh
+    ├── inject_latency.sh
+    ├── inject_failure.sh
+    └── benchmark.sh
+
+```
+
+
+
+
+
+
+
