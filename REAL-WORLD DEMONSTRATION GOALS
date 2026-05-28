@@ -1,0 +1,107 @@
+```text id="x9p2m4"
+RAMMY REAL-WORLD DEMONSTRATION GOALS
+
+
+[ ] Run a 70B+ parameter open LLM entirely from pooled consumer hardware
+    Example:
+        Llama 3 70B
+        DeepSeek-class reasoning models
+        Mixtral variants
+
+    Goal:
+        prove that ordinary users can host frontier-scale models
+        without owning one massive enterprise machine.
+
+
+[ ] Run a 400B+ parameter model partially resident in fabric memory
+    Example:
+        future open-weight frontier models
+
+    Goal:
+        demonstrate distributed tensor residency and remote memory paging.
+
+
+[ ] Run Stable Diffusion XL with massive distributed VRAM/RAM residency
+    Example:
+        SDXL
+        Flux
+        future high-resolution diffusion systems
+
+    Goal:
+        allow cinematic-scale image generation from pooled hardware.
+
+
+[ ] Run distributed video generation across pooled memory fabrics
+    Example:
+        Sora-like open systems
+        WAN-scale video diffusion
+        long-context video transformers
+
+    Goal:
+        prove fabric-native generation for workloads impossible
+        on single consumer machines.
+
+
+[ ] Build a 1TB+ pooled memory fabric from recycled hardware
+    Example:
+        20 ordinary machines
+        64GB RAM each
+        high-speed Ethernet fabric
+
+    Goal:
+        democratize terabyte-scale memory systems.
+
+
+[ ] Train a multimodal AI model entirely from a home-lab cluster
+    Example:
+        image-text models
+        local research models
+        agent systems
+
+    Goal:
+        show distributed AI training without datacenter ownership.
+
+
+[ ] Continue LLM inference after a node dies mid-generation
+    Example:
+        node failure during token streaming
+
+    Goal:
+        prove fault-transparent AI execution.
+
+
+[ ] Run large scientific datasets fully resident in pooled RAM
+    Example:
+        genomics
+        astronomy datasets
+        simulation state
+        fluid dynamics
+
+    Goal:
+        remove memory bottlenecks from small research teams.
+
+
+[ ] Allow photographers and filmmakers to process ultra-large media projects
+    Example:
+        multi-terabyte RAW photo libraries
+        16K video timelines
+        volumetric media
+        neural rendering datasets
+
+    Goal:
+        use pooled memory fabrics for creative workloads traditionally
+        requiring enterprise workstations.
+
+
+[ ] Turn ordinary homes and garages into distributed supercomputers
+    Example:
+        spare desktops
+        used servers
+        recycled laptops
+        workstation clusters
+
+    Goal:
+        make advanced computation accessible to ordinary people,
+        researchers, artists, and independent developers.
+
+```
