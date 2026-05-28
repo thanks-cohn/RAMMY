@@ -1,0 +1,129 @@
+```text id="e4m9r0"
+rammy/
+├── build.zig
+├── build.zig.zon
+│
+├── fabric/
+│   ├── fabric.zig
+│   ├── node.zig
+│   ├── topology.zig
+│   ├── discovery.zig
+│   ├── membership.zig
+│   ├── heartbeat.zig
+│   ├── routing.zig
+│   ├── latency.zig
+│   ├── bandwidth.zig
+│   └── fabric_id.zig
+│
+├── gmem/
+│   ├── gmem.zig
+│   ├── page.zig
+│   ├── allocator.zig
+│   ├── ownership.zig
+│   ├── migration.zig
+│   ├── replication.zig
+│   ├── residency.zig
+│   ├── pager.zig
+│   ├── eviction.zig
+│   └── remote_fault.zig
+│
+├── runtime/
+│   ├── runtime.zig
+│   ├── distributed_heap.zig
+│   ├── process_identity.zig
+│   ├── migration.zig
+│   ├── checkpoint.zig
+│   ├── failover.zig
+│   ├── scheduler.zig
+│   ├── locality.zig
+│   ├── placement.zig
+│   ├── fabric_api.zig
+│   └── object_space.zig
+│
+├── coherence/
+│   ├── coherence.zig
+│   ├── lease.zig
+│   ├── ownership.zig
+│   ├── invalidation.zig
+│   ├── synchronization.zig
+│   └── consistency.zig
+│
+├── ai/
+│   ├── tensor.zig
+│   ├── tensor_shard.zig
+│   ├── kv_cache.zig
+│   ├── placement.zig
+│   ├── distributed_inference.zig
+│   ├── distributed_training.zig
+│   ├── model_residency.zig
+│   └── stable_diffusion.zig
+│
+├── sim/
+│   ├── sim.zig
+│   ├── virtual_node.zig
+│   ├── topology.zig
+│   ├── latency.zig
+│   ├── bandwidth.zig
+│   ├── failure.zig
+│   ├── numa.zig
+│   └── fabric_sim.zig
+│
+├── tools/
+│   ├── fabricctl.zig
+│   ├── nodectl.zig
+│   ├── memview.zig
+│   ├── topoview.zig
+│   ├── faultctl.zig
+│   └── bench.zig
+│
+├── log/
+│   ├── battle_report.zig
+│   ├── migration_trace.zig
+│   ├── memory_trace.zig
+│   ├── scheduler_trace.zig
+│   └── fault_trace.zig
+│
+├── linux/
+│   ├── daemon/
+│   ├── bridge/
+│   ├── hooks/
+│   ├── pagefault/
+│   └── transport/
+│
+├── kernel/
+│   ├── main.zig
+│   ├── panic.zig
+│   ├── boot.zig
+│   │
+│   ├── arch/
+│   │   ├── x86_64/
+│   │   ├── riscv64/
+│   │   └── arm64/
+│   │
+│   ├── mm/
+│   ├── proc/
+│   ├── ipc/
+│   ├── sync/
+│   ├── time/
+│   ├── cap/
+│   ├── net/
+│   ├── fault/
+│   └── drivers/
+│
+├── tests/
+│   ├── migration_test.zig
+│   ├── coherence_test.zig
+│   ├── failover_test.zig
+│   ├── scheduler_test.zig
+│   ├── replication_test.zig
+│   ├── topology_test.zig
+│   └── ai_test.zig
+│
+└── scripts/
+    ├── spawn_nodes.sh
+    ├── kill_node.sh
+    ├── inject_latency.sh
+    ├── inject_failure.sh
+    └── benchmark.sh
+
+```
