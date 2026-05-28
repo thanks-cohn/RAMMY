@@ -378,5 +378,69 @@ Machines are temporary.
 Processes migrate.
 Memory persists.
 
+```text
+WHY THE REPOSITORY IS STRUCTURED THIS WAY
+
+
+RAMMY begins as a distributed fabric runtime running on Linux.
+
+This is intentional.
+
+The first objective is not replacing Linux.
+The first objective is proving the fabric model itself:
+
+    pooled memory
+    distributed page ownership
+    process migration
+    topology-aware scheduling
+    failure-transparent execution
+
+Because of this, the repository is intentionally centered around:
+
+    fabric/
+    gmem/
+    runtime/
+    sim/
+
+rather than low-level bare-metal code.
+
+The fabric is the true heart of RAMMY.
+
+Linux initially serves as:
+    hardware substrate
+    driver layer
+    networking layer
+    debugging environment
+    development cocoon
+
+Over time, RAMMY is intended to evolve through several stages:
+
+    v0:
+        Linux-hosted fabric runtime
+
+    v1:
+        distributed memory operating environment
+
+    v2:
+        hybrid runtime/kernel architecture
+
+    v3:
+        kernel-native distributed memory management
+
+    v4:
+        bare-metal fabric-native operating system
+
+
+The repository structure reflects this evolutionary path.
+
+RAMMY does not begin as a replacement operating system.
+
+RAMMY begins as a distributed memory civilization growing inside one.
+
+```
+
+
+
+
 THE FABRIC REMEMBERS.
 ```
