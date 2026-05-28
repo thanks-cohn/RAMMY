@@ -11,13 +11,15 @@ A FABRIC-NATIVE DISTRIBUTED MEMORY KERNEL
 ================================================================================
 ```
 
+A FABRIC-NATIVE DISTRIBUTED MEMORY KERNEL
+
+
 Machines die.
 Memory remains.
 The fabric remembers.
 
-================================================================================
+
 GRAND VISION
-================================================================================
 
 RAMMY is an experimental distributed operating system and kernel architecture
 designed around one central idea:
@@ -41,12 +43,11 @@ Instead:
 RAMMY seeks to create a true distributed memory civilization:
 a unified computer composed of many physical nodes.
 
-================================================================================
+
 WHAT WE INTEND TO BUILD
-================================================================================
+
 
 [1] POOLED FABRIC RAM
-----------------------------------------
 
 All node memory contributes to one global memory civilization.
 
@@ -70,9 +71,8 @@ Pages can:
 
 The kernel understands memory topology and distance.
 
-================================================================================
+
 [2] GLOBAL PROCESS IDENTITY
-----------------------------------------
 
 Processes are NOT tied to machines.
 
@@ -87,9 +87,8 @@ without losing identity.
 
 A process should survive hardware death whenever possible.
 
-================================================================================
+
 [3] DISTRIBUTED NUMA FABRIC
-----------------------------------------
 
 RAMMY treats the cluster as one giant NUMA organism.
 
@@ -109,9 +108,8 @@ or:
 
 depending on cost.
 
-================================================================================
+
 [4] FABRIC-NATIVE PAGE MANAGEMENT
-----------------------------------------
 
 The global memory manager (GMEM) tracks:
 
@@ -134,9 +132,8 @@ Memory modes include:
 
 We explicitly avoid magical incoherent memory chaos.
 
-================================================================================
+
 [5] FAILURE-TRANSPARENT COMPUTING
-----------------------------------------
 
 Machines are expected to fail.
 
@@ -153,9 +150,8 @@ The goal:
 
     COMPUTATION CONTINUES.
 
-================================================================================
+
 [6] TRANSPARENT SYSTEM DESIGN
-----------------------------------------
 
 No hidden magic.
 No invisible orchestration theater.
@@ -172,9 +168,8 @@ is logged and inspectable.
 
 Logs are battle reports.
 
-================================================================================
+
 LANGUAGES
-================================================================================
 
 PRIMARY LANGUAGE:
     ZIG
@@ -208,9 +203,8 @@ Possible future Rust usage:
 
 Rust is NOT the founding systems language.
 
-================================================================================
+
 CORE SUBSYSTEMS
-================================================================================
 
 fabric/
     node discovery
@@ -252,9 +246,8 @@ log/
     page history
     system truth layer
 
-================================================================================
+
 INITIAL DEVELOPMENT STRATEGY
-================================================================================
 
 PHASE 1:
     Linux-hosted simulation environment
@@ -270,22 +263,16 @@ We simulate:
 
 before bare metal.
 
-----------------------------------------
-
 PHASE 2:
     distributed page mapping
 
 Machine A allocates pages.
 Machine B maps them remotely.
 
-----------------------------------------
-
 PHASE 3:
     process migration
 
 Move execution toward hot memory regions.
-
-----------------------------------------
 
 PHASE 4:
     fault-transparent execution
@@ -293,16 +280,13 @@ PHASE 4:
 Kill nodes.
 Processes survive.
 
-----------------------------------------
-
 PHASE 5:
     bare-metal distributed kernel
 
 The fabric becomes the machine.
 
-================================================================================
+
 INFLUENCES
-================================================================================
 
 Amoeba
 Sprite
@@ -314,9 +298,8 @@ Capability systems
 RDMA fabrics
 Future CXL architectures
 
-================================================================================
+
 FINAL DOCTRINE
-================================================================================
 
 A node is not a computer.
 
@@ -329,4 +312,4 @@ Processes migrate.
 Memory persists.
 
 THE FABRIC REMEMBERS.
-================================================================================
+```
